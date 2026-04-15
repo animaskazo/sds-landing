@@ -7,34 +7,26 @@ export default function FaqSection() {
     const [isOpen, setIsOpen] = useState(false);
     const data = [
         {
-            question: 'Do I need coding or design experience to use PrebuiltUI?',
-            answer: "Basic coding knowledge (HTML/CSS, Tailwind) helps, but advanced design skills aren't required. You can use components as-is or customize them.",
+            question: '¿Necesito ser una empresa hacer un proyecto con Uds?',
+            answer: "No, puedes ser una persona natural, lo importante es que tengas una idea clara de lo que quieres lograr.",
         },
         {
-            question: 'What is PrebuiltUI and how does it help developers and designers?',
-            answer: 'PrebuiltUI provides ready-to-use, customizable UI components and templates, saving time for developers and designers.',
+            question: '¿Cuánto tiempo dura un proyecto?',
+            answer: 'Depende de la complejidad del proyecto, pero generalmente toma entre 2 y 4 semanas.',
         },
         {
-            question: 'Can I use PrebuiltUI components in my existing project?',
-            answer: 'Yes, components can be integrated into HTML, React, Next.js, Vue, and other projects using Tailwind CSS.',
+            question: '¿Qué tecnologías utilizan?',
+            answer: 'Utilizamos las tecnologías más modernas y escalables del mercado, como React, Next.js, Node.js, Python, PostgreSQL, MongoDB, AWS, Docker, Kubernetes, entre otras.',
         },
         {
-            question: 'How customizable are the generated components?',
-            answer: 'Components are highly customizable with Tailwind utility classes, theming, and structural adjustments.',
-        },
-        {
-            question: 'Does PrebuiltUI support team collaboration?',
-            answer: "There's no clear documentation on built-in collaboration features. Check their support for team options.",
-        },
-        {
-            question: 'Can I try PrebuiltUI before purchasing a plan?',
-            answer: 'Yes, you can try PrebuiltUI with full access to features.',
-        },
+            question: '¿Qué tipo de soporte ofrecen después de la entrega?',
+            answer: 'Ofrecemos soporte técnico continuo, mantenimiento, actualizaciones y mejoras según las necesidades de tu proyecto.',
+        }
     ];
 
     return (
         <section className='mt-32'>
-            <SectionTitle title="FAQ's" description="Looking for answers to your frequently asked questions? Check out our FAQ's section below to find." />
+            <SectionTitle title="FAQ's" description="Resuelve las principales dudas que podrias tener" />
             <div className='mx-auto mt-12 space-y-4 w-full max-w-xl'>
                 {data.map((item, index) => (
                     <motion.div key={index} className='flex flex-col glass rounded-md'

@@ -19,34 +19,11 @@ export default function Footer() {
             transition={{ duration: 0.5 }}
         >
             <a href="https://prebuiltui.com?utm_source=genesis">
-                <Image src='/assets/logo.svg' alt='logo' className='h-8.5 w-auto' width={205} height={48} />
+                <Image src='/assets/superdigital-white.png' alt='logo' className='h-6 w-auto' width={205} height={48} />
             </a>
 
-            <div className="flex flex-wrap items-center justify-center gap-8 py-8">
-                {links.map((link, index) => (
-                    <Link key={index} href={link.href} className='transition hover:text-gray-300'>
-                        {link.name}
-                    </Link>
-                ))}
-            </div>
-            <div className="flex items-center gap-6 pb-6">
-                <a href="#" className="hover:-translate-y-0.5 text-gray-200 transition-all duration-300">
-                    <DribbbleIcon />
-                </a>
-                <a href="#" className="hover:-translate-y-0.5 text-gray-200 transition-all duration-300">
-                    <LinkedinIcon />
-                </a>
-                <a href="#" className="hover:-translate-y-0.5 text-gray-200 transition-all duration-300">
-                    <TwitterIcon />
-                </a>
-                <a href="#" className="hover:-translate-y-0.5 text-gray-200 transition-all duration-300">
-                    <GithubIcon />
-                </a>
-            </div>
-            <hr className="w-full border-white/20 mt-6" />
-            <div className="flex flex-col md:flex-row items-center w-full justify-between gap-4 py-4">
-                <p>Build Ai agents for free</p>
-                <p>Copyright © 2025 <a href="https://prebuiltui.com?utm_source=genesis">PrebuiltUI</a>. All rights reservered.</p>
+            <div className="flex text-xs flex-col md:flex-row items-center w-full justify-center gap-4 py-4 pb-12">
+                <p>Copyright © 2026 Super Digital Solutions. Todos los derechos reservados.</p>
             </div>
         </motion.footer>
     );

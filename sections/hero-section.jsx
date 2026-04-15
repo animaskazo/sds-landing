@@ -38,7 +38,7 @@ export default function HeroSection() {
                     viewport={{ once: true }}
                     transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                 >
-                    Somos el partner ideal para construir cualquier producto digital
+                    Somos el partner ideal para construir el producto que tu empresa necesita
                 </motion.p>
 
                 <motion.div className="flex flex-col md:flex-row max-md:w-full items-center gap-4 md:gap-3 mt-6"
@@ -47,9 +47,9 @@ export default function HeroSection() {
                     viewport={{ once: true }}
                     transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                 >
-                    <button className="btn max-md:w-full glass py-3">
+                    <motion.a href="mailto:hola@digital-solutions.work" className="btn max-md:w-full glass py-3">
                         Tengamos una reunión
-                    </button>
+                    </motion.a>
                 </motion.div>
             </motion.section>
         </>

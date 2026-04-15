@@ -7,53 +7,32 @@ export default function Testimonials() {
     const ref = useRef([]);
     const data = [
         {
-            review: 'Super clean and easy to use. These Tailwind + React components saved me hours of dev time and countless lines of extra code!',
+            review: 'Super Digital nos ayudo en la construcción de nuestro sitio web y quedo increible. El equipo es muy profesional y siempre estuvieron atentos a nuestras necesidades.',
             name: 'Richard Nelson',
             about: 'Founder & CEO',
             rating: 5,
             image: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200',
         },
         {
-            review: 'The design quality is top-notch. Perfect balance between simplicity and style. Highly recommend for any creative developer!',
-            name: 'Sophia Martinez',
-            about: 'Founder & CEO',
+            review: 'Construyeron toda la tecnología de nuesta empresa de ultima milla en un plazo muy acotado. Siempre muy pendientes de la exeriencia y la seguridad de la app',
+            name: 'Frank Martinez',
+            about: 'Founder',
             rating: 5,
             image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200',
         },
         {
-            review: 'Absolutely love the reusability of these components. My workflow feels 10x faster now with cleaner and more consistent layouts.',
+            review: 'Diseñador y construyeron nuetro sitio web y una aplicación para la gestión de nuestro servicio técnico. Quedo increible y nos ha ayudado mucho a mejorar la experiencia de nuestros clientes.',
             name: 'Ethan Roberts',
             about: 'Founder & CEO',
             rating: 5,
             image: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=200&auto=format&fit=crop&q=60',
-        },
-        {
-            review: 'Clean, elegant, and efficient. These components are a dream for any modern web developer who values beautiful code.',
-            name: 'Isabella Kim',
-            about: 'Founder & CEO',
-            rating: 5,
-            image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=200&auto=format&fit=crop&q=60',
-        },
-        {
-            review: "I've tried dozens of UI kits, but this one just feels right. Everything works seamlessly and looks incredibly polished.",
-            name: 'Liam Johnson',
-            about: 'Founder & CEO',
-            rating: 5,
-            image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&h=100&auto=format&fit=crop',
-        },
-        {
-            review: 'Brilliantly structured components with clean, modern styling. Makes development a joy and design updates super quick.',
-            name: 'Ava Patel',
-            about: 'Founder & CEO',
-            rating: 5,
-            image: 'https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/userImage/userImage1.png',
-        },
+        }
     ];
     return (
         <section className="mt-32 flex flex-col items-center">
             <SectionTitle
-                title="Here what aur trusted users about our best AI agents."
-                description="Empower your business with AI agents that optimize processes and accelerate performance."
+                title="Lo que dicen nuestros clientes"
+                description="Generamos lazos de confianza y entregamos resultados que impulsan el crecimiento de sus negocios"
             />
             <div className='mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3'>
                 {data.map((item, index) => (
@@ -74,7 +53,7 @@ export default function Testimonials() {
                             <p className="font-medium">{item.about}</p>
                             <img className='size-10 rounded-full' src={item.image} alt={item.name} />
                         </div>
-                        <p className='line-clamp-3'>“{item.review}”</p>
+                        <p className='line-clamp-5'>“{item.review}”</p>
                         <p className='text-gray-300'>
                             - {item.name}
                         </p>

@@ -2,10 +2,10 @@ import Footer from '@/components/footer';
 import Navbar from '@/components/navbar';
 
 export const metadata = {
-    title: 'Genesis - PrebuiltUI',
-    description: 'Design AI assistants that research, plan, and execute tasks — all powered by your prompts.',
+    title: 'Super Digital Solutions',
+    description: 'Super Digital Solutions es una empresa de desarrollo de software con sede en Chile, especializada en la creación de productos digitales de alta calidad.',
     appleWebApp: {
-        title: 'Genesis - PrebuiltUI',
+        title: 'Super Digital Solutions',
     },
 };
 

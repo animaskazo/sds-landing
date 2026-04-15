@@ -50,7 +50,7 @@ export default function Navbar() {
 
                 <div className='hidden items-center space-x-10 md:flex'>
                     {links.map((link) => (
-                        <Link key={link.name} href={link.href} className='transition hover:text-gray-300'>
+                        <Link key={link.name} href={link.href} className='transition hover:text-gray-300 hidden'>
                             {link.name}
                         </Link>
                     ))}

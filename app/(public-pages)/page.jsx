@@ -13,12 +13,10 @@ export default function Page() {
     return (
         <main className='px-4'>
             <HeroSection />
-            <TrustedCompanies />
             <Features />
             <WorkflowSteps />
             <Testimonials />
             <FaqSection />
-            <PricingPlans />
             <CallToAction />
         </main>
     );

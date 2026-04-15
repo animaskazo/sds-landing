@@ -15,7 +15,7 @@ export default function CallToAction() {
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 280, damping: 70, mass: 1 }}
             >
-                Ready to build?
+                ¿Tienes una idea en mente?
             </motion.h2>
             <motion.p className="mt-4 text-sm/7 max-w-md"
                 initial={{ y: 80, opacity: 0 }}
@@ -23,17 +23,17 @@ export default function CallToAction() {
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 200, damping: 70, mass: 1 }}
             >
-                See how fast you can turn your ideas into reality. Get started for free, no credit card required.
+                Hablemos de tu idea y te asesoramos sin compromiso.
             </motion.p>
-            <motion.button className="btn glass transition-none flex items-center gap-2 mt-8"
+            <motion.a href="mailto:hola@digital-solutions.work" className="btn glass transition-none flex items-center justify-center gap-2 mt-8"
                 initial={{ y: 80, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 280, damping: 70, mass: 1 }}
             >
-                Try now
+                Envíanos un mensaje
                 <ArrowRightIcon className="size-4" />
-            </motion.button>
+            </motion.a>
         </motion.div>
     );
 };
