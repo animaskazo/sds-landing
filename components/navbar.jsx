@@ -44,8 +44,8 @@ export default function Navbar() {
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1 }}
             >
-                <a href='https://prebuiltui.com?utm_source=genesis'>
-                    <Image src='/assets/logo.svg' alt='logo' className='h-8.5 w-auto' width={205} height={48} />
+                <a href='#'>
+                    <Image src='/assets/superdigital-white.png' alt='logo' className='h-8.5 w-auto' width={205} height={48} />
                 </a>
 
                 <div className='hidden items-center space-x-10 md:flex'>

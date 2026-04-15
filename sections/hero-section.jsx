@@ -22,10 +22,7 @@ export default function HeroSection() {
                     viewport={{ once: true }}
                     transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                 >
-                    <p>Smart, Fast, Always Active.</p>
-                    <button className="btn glass py-1 px-3 text-xs">
-                        Launch App
-                    </button>
+                    <p>Pensamos, diseñamos y construimos tu idea</p>
                 </motion.div>
                 <motion.h1 className="text-center text-4xl/13 md:text-6xl/19 mt-4 font-semibold tracking-tight max-w-3xl"
                     initial={{ y: 50, opacity: 0 }}
