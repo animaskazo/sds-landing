@@ -14,10 +14,10 @@ export default function Navbar() {
 
     const links = [
         { name: 'Home', href: '/' },
-        { name: 'Agents', href: '#agents' },
-        { name: 'Use Cases', href: '#use-cases' },
-        { name: 'Pricing', href: '#pricing' },
-        { name: 'Docs', href: '#docs' }
+        { name: 'Servicios', href: '#agents' },
+        { name: 'Clientes', href: '#use-cases' },
+        { name: 'Testimonios', href: '#pricing' },
+        { name: 'Proyectos', href: '#docs' }
     ];
 
     useEffect(() => {
@@ -45,7 +45,7 @@ export default function Navbar() {
                 transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1 }}
             >
                 <a href='#'>
-                    <Image src='/assets/superdigital-white.png' alt='logo' className='h-8.5 w-auto' width={205} height={48} />
+                    <Image src='/assets/superdigital-white.png' alt='logo' className='h-6 w-auto' width={205} height={48} />
                 </a>
 
                 <div className='hidden items-center space-x-10 md:flex'>
@@ -54,9 +54,7 @@ export default function Navbar() {
                             {link.name}
                         </Link>
                     ))}
-                    <Link href='/' className='btn glass'>
-                        Sign Up
-                    </Link>
+
                 </div>
 
                 <button onClick={() => setIsOpen(true)} className='transition active:scale-90 md:hidden'>
@@ -70,11 +68,6 @@ export default function Navbar() {
                         {link.name}
                     </Link>
                 ))}
-
-
-                <Link href='/' className='btn glass' onClick={() => setIsOpen(false)}>
-                    Sign Up
-                </Link>
 
                 <button onClick={() => setIsOpen(false)} className='rounded-md p-2 glass'>
                     <XIcon />
