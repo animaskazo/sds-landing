@@ -47,7 +47,7 @@ export default function HeroSection() {
                     viewport={{ once: true }}
                     transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                 >
-                    <motion.a href="mailto:hola@digital-solutions.work" className="btn max-md:w-full glass py-3">
+                    <motion.a href="mailto:hola@digital-solutions.work" className="btn glass py-3">
                         Tengamos una reunión
                     </motion.a>
                 </motion.div>

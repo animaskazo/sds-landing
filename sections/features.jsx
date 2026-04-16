@@ -26,7 +26,7 @@ export default function Features() {
     ];
 
     return (
-        <section className="mt-32">
+        <section className="mt-32" id="servicios">
             <SectionTitle
                 title="Nuestra especialidad"
                 description="Construimos productos de la mas alta calidad técnica, con un diseño y experiencia de usuario excepcionales"

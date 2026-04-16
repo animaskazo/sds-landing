@@ -28,7 +28,7 @@ const steps = [
 
 export default function WorkflowSteps() {
     return (
-        <section className="mt-32 relative">
+        <section className="mt-32 relative" id="metodologia">
             <SectionTitle
                 title="Desde la idea a produccion en tiempo record"
                 description="Diseñamos un proceso de desarrollo ágil y eficiente para entregar productos de alta calidad en tiempo record"

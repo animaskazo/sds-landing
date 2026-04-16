@@ -14,10 +14,9 @@ export default function Navbar() {
 
     const links = [
         { name: 'Home', href: '/' },
-        { name: 'Servicios', href: '#agents' },
-        { name: 'Clientes', href: '#use-cases' },
-        { name: 'Testimonios', href: '#pricing' },
-        { name: 'Proyectos', href: '#docs' }
+        { name: 'Servicios', href: '#servicios' },
+        { name: 'Metodología', href: '#metodologia' },
+        { name: 'Testimonios', href: '#testimonios' }
     ];
 
     useEffect(() => {

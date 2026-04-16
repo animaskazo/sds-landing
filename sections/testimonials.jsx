@@ -29,7 +29,7 @@ export default function Testimonials() {
         }
     ];
     return (
-        <section className="mt-32 flex flex-col items-center">
+        <section className="mt-32 flex flex-col items-center" id="testimonios">
             <SectionTitle
                 title="Lo que dicen nuestros clientes"
                 description="Generamos lazos de confianza y entregamos resultados que impulsan el crecimiento de sus negocios"
