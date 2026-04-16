@@ -22,7 +22,7 @@ const steps = [
         title: "Manos a la obra",
         description: "Desarrollamos, iteramos y entregamos un producto listo para producción en tiempo record.",
         link: "https://prebuiltui.com/tailwind-templates",
-        image: "/assets/workflow3.png",
+        image: "/assets/workflow3.jpg",
     },
 ];
 
