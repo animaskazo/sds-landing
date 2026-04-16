@@ -16,6 +16,7 @@ export default function Navbar() {
         { name: 'Home', href: '/' },
         { name: 'Servicios', href: '#servicios' },
         { name: 'Metodología', href: '#metodologia' },
+        { name: 'Proyectos', href: '#proyectos' },
         { name: 'Testimonios', href: '#testimonios' }
     ];
 
