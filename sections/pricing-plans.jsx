@@ -1,6 +1,5 @@
 import SectionTitle from "@/components/section-title";
 import { CheckIcon, CrownIcon, RocketIcon, ZapIcon } from "lucide-react";
-import { motion } from "framer-motion";
 import { useRef } from "react";
 
 export default function PricingPlans() {
@@ -63,19 +62,7 @@ export default function PricingPlans() {
 
             <div className='mt-12 flex flex-wrap items-center justify-center gap-6'>
                 {data.map((item, index) => (
-                    <motion.div key={index} className='group w-full max-w-80 glass p-6 rounded-xl hover:-translate-y-0.5'
-                        initial={{ y: 150, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: `${index * 0.15}`, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
-                        ref={(el) => (ref.current[index] = el)}
-                        onAnimationComplete={() => {
-                            const card = ref.current[index];
-                            if (card) {
-                                card.classList.add("transition", "duration-300");
-                            }
-                        }}
-                    >
+                    <div key={index} className='group w-full max-w-80 glass p-6 rounded-xl hover:-translate-y-0.5 transition duration-300'>
                         <div className="flex items-center w-max ml-auto text-xs gap-2 glass rounded-full px-3 py-1">
                             <item.icon className='size-3.5' />
                             <span>{item.title}</span>
@@ -97,7 +84,7 @@ export default function PricingPlans() {
                                 </div>
                             ))}
                         </div>
-                    </motion.div>
+                    </div>
                 ))}
             </div>
         </section>

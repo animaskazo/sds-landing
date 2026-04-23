@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 
 export default function TrustedCompanies() {
     const logos = [
@@ -10,17 +9,12 @@ export default function TrustedCompanies() {
     ]
 
     return (
-        <motion.section className="mt-14"
-            initial={{ y: 150, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 200, damping: 70, mass: 1 }}
-        >
+        <section className="mt-14">
             <p className="py-6 mt-14 text-center">Hemos construido productos para empresas como</p>
 
             <div className="flex flex-wrap justify-between max-sm:justify-center gap-10 max-w-4xl w-full mx-auto py-4" id="logo-container">
                 {logos.map((logo, index) => <img key={index} src={logo} alt="logo" className="h-7 w-auto max-w-xs" />)}
             </div>
-        </motion.section>
+        </section>
     )
 }

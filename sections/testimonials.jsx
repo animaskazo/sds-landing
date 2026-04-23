@@ -15,15 +15,15 @@ export default function Testimonials() {
         },
         {
             review: 'Construyeron toda la tecnología de nuesta empresa de ultima milla en un plazo muy acotado. Siempre muy pendientes de la exeriencia y la seguridad de la app',
-            name: 'Frank Martinez',
+            name: 'Frank',
             about: 'Founder',
             rating: 5,
             image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200',
         },
         {
-            review: 'Diseñador y construyeron nuetro sitio web y una aplicación para la gestión de nuestro servicio técnico. Quedo increible y nos ha ayudado mucho a mejorar la experiencia de nuestros clientes.',
-            name: 'Ethan Roberts',
-            about: 'Founder & CEO',
+            review: 'Diseñaron y construyeron nuetro sitio web y una aplicación para la gestión de nuestro servicio técnico. Quedo increible y nos ha ayudado mucho a mejorar la experiencia de nuestros clientes.',
+            name: 'Carlos',
+            about: 'Founder',
             rating: 5,
             image: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=200&auto=format&fit=crop&q=60',
         }

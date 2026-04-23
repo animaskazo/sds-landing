@@ -1,5 +1,4 @@
 import SectionTitle from "@/components/section-title";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { ExternalLinkIcon } from "lucide-react";
 
@@ -37,13 +36,9 @@ export default function Portfolio() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 max-w-7xl mx-auto">
                 {projects.map((project, index) => (
-                    <motion.div
+                    <div
                         key={index}
                         className="glass rounded-2xl overflow-hidden flex flex-col h-full"
-                        initial={{ y: 100, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: index * 0.2, type: "spring", stiffness: 200, damping: 40 }}
                     >
                         <div className="relative h-56 w-full">
                             <Image
@@ -76,7 +71,7 @@ export default function Portfolio() {
                                 </a>
                             </div>
                         </div>
-                    </motion.div>
+                    </div>
                 ))}
             </div>
         </section>
